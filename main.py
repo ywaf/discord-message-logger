@@ -53,13 +53,13 @@ async def on_message(message):
     # messageid = str(message.id)
     time = str(message.created_at)
     channel = str(message.channel)
-    print(serverid, channelid)
+    print(author, userid, content, time)
     folderpath = os.getcwd() + """\\logs\\""" + str(serverid) + " - " + str(message.guild)
     path = folderpath + """\\""" + str(channelid) + " - " + str(channel) + ".json"
 
 
     if exists(str(path)):
-        print("exists")
+        print("file exists")
 
     else:
         if not os.path.isdir(folderpath):
