@@ -27,7 +27,6 @@ if not os.path.isdir(os.getcwd() + "\\logs"):
 
 @bot.event
 async def on_ready():
-    await bot.change_presence(activity=discord.Game(name="🐲"))
     print("Logged in as: " + bot.user.name + "#" + bot.user.discriminator)
     print("Ready")
 
