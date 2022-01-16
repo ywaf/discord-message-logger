@@ -20,8 +20,8 @@ except Exception as e:
 
 TOKEN = str(config['token'])
 
-if not os.path.isdir(os.getcwd() + "\\logs"):
-    os.mkdir(os.getcwd() + "\\logs")
+if not os.path.isdir(os.getcwd() + "/logs"):
+    os.mkdir(os.getcwd() + "/logs")
     print("made logs folder")
 
 
@@ -53,8 +53,8 @@ async def on_message(message):
     time = str(message.created_at)
     channel = str(message.channel)
     print(author, userid, content, time)
-    folderpath = os.getcwd() + """\\logs\\""" + str(serverid) + " - " + str(message.guild)
-    path = folderpath + """\\""" + str(channelid) + " - " + str(channel) + ".json"
+    folderpath = os.getcwd() + """/logs/""" + str(serverid) + " - " + str(message.guild)
+    path = folderpath + """/""" + str(channelid) + " - " + str(channel) + ".json"
 
 
     if exists(str(path)):
