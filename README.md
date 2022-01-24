@@ -9,3 +9,6 @@ Put your bot token in ```config.json```
 
 # Usage
 ```python3 main.py```
+
+# Note!
+Please note that there are 2 branches, main is for hosting on windows, and linux is for hosting on linux. This is because paths are handled differently between systems :/
